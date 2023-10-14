@@ -16,3 +16,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 version = "0.1.0dev1"
 channel = "dev"
+
+
+import time
+import json
+import sqlite3 as sql
+import urllib.request
+import platform
+import subprocess
+
+from sqlite3 import *
+from urllib.error import HTTPError, URLError
+from colorama import Fore
+
+from sys import exit, argv

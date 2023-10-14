@@ -17,21 +17,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import os
 import sys
 
-import src
-
+# import src
+ 
 import yaml
 from yaml import SafeLoader
 
-
-import time
-import json
-import sqlite3 as sql
-import urllib.request
-import platform
-import subprocess
-
-from sqlite3 import *
-from urllib.error import HTTPError, URLError
-from colorama import Fore
 from halo import Halo
-from sys import exit, argv
+import time
+
+
+spinner = Halo(text='Loading', spinner='point')
+spinner.start()
+
+time.sleep(3)
+
+spinner.stop()
