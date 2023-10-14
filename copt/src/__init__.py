@@ -43,6 +43,7 @@ help_message = f"""{GREEN}{BOLD}coreOS Package Tool{CRESET} ({version}) {platfor
 
 {BOLD}{RED}-> Miscellaneous{CRESET}
     {CYAN}{BOLD}-Ab{CRESET}     About page for copt
+    {CYAN}{BOLD}-h{CRESET}      Help page for copt
 
 {BOLD}{BLUE}-> Bootstrapping{CRESET}
     {CYAN}{BOLD}-Cb{CRESET}     Bootstrapps your system according to the passed arguments"""
