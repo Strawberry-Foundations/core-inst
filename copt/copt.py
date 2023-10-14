@@ -28,11 +28,11 @@ arg_len = len(argv)
 
 package_list = ["sys-base", "sys-base-dev"]
 
-match arg_len > 1 and argv[1]:
-    case "help":
+match arg_len > 1 and argv[1].lower():
+    case "help" | "-h":
         print(help_message)
     
-    case "install":
+    case "-cb":
         if not arg_len > 2:
             exit(1)
         
